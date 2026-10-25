@@ -279,7 +279,7 @@ $exitItem = $menu.Items.Add("Salir")
 $tray = New-Object System.Windows.Forms.NotifyIcon
 
 # Usar explícitamente el icono Asterisk de Windows
-$iconPath = Join-Path $PSScriptRoot "ExternalMonitor-BrightnessControl.ico"
+$iconPath = Join-Path $PSScriptRoot "MonitorTrayIcon.ico"
 $tray.Icon = New-Object System.Drawing.Icon($iconPath)
 $tray.Text = "Monitor Brightness"
 $tray.ContextMenuStrip = $menu
